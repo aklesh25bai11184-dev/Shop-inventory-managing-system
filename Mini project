@@ -2,7 +2,7 @@ import sqlite3
 import tkinter as tk
 from tkinter import ttk, messagebox
 
-# ---------- DATABASE PART ----------
+#  DATABASE PART 
 
 def connect_db():
     conn = sqlite3.connect("inventory.db")
@@ -20,7 +20,7 @@ def connect_db():
 
 conn, cur = connect_db()
 
-# ---------- MAIN APP CLASS ----------
+#  MAIN APP CLASS 
 
 class InventoryApp:
     def __init__(self, root):
@@ -29,13 +29,13 @@ class InventoryApp:
         self.root.geometry("700x500+200+100")
         self.root.resizable(False, False)
 
-        # ----- VARIABLES -----
+        #  VARIABLES 
         self.var_id = tk.StringVar()
         self.var_name = tk.StringVar()
         self.var_qty = tk.StringVar()
         self.var_price = tk.StringVar()
 
-        # ----- TOP FRAME -----
+        # TOP FRAME 
         top_frame = tk.LabelFrame(self.root, text="Item Details", padx=10, pady=10)
         top_frame.pack(fill="x", padx=10, pady=5)
 
@@ -59,7 +59,7 @@ class InventoryApp:
         self.entry_price = tk.Entry(top_frame,bg="light yellow", textvariable=self.var_price, width=10)
         self.entry_price.grid(row=1, column=3, padx=5, pady=5, sticky="w")
 
-        # ----- BUTTONS -----
+        #  BUTTONS 
         btn_frame = tk.Frame(self.root)
         btn_frame.pack(fill="x", padx=10, pady=5)
 
@@ -69,7 +69,7 @@ class InventoryApp:
         tk.Button(btn_frame, text="Clear", width=10, command=self.clear_fields).grid(row=0, column=3, padx=5)
         tk.Button(btn_frame, text="Refresh", width=10, command=self.fetch_items).grid(row=0, column=4, padx=5)
 
-        # ----- TABLE (TREEVIEW) -----
+        #  TABLE (TREEVIEW) 
         table_frame = tk.Frame(self.root)
         table_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
@@ -100,7 +100,7 @@ class InventoryApp:
         # Load data at start
         self.fetch_items()
 
-    # ---------- HELPER FUNCTIONS ----------
+    #  HELPER FUNCTIONS 
 
     def clear_fields(self):
         self.var_id.set("")
@@ -133,7 +133,7 @@ class InventoryApp:
 
         return True
 
-    # ---------- DB OPERATIONS ----------
+    #  DB OPERATIONS 
 
     def add_item(self):
         if not self.validate_fields(need_id=False):
@@ -207,9 +207,10 @@ class InventoryApp:
             messagebox.showerror("Error", f"Error while deleting item: {e}")
 
 
-# ---------- MAIN ----------
+#  MAIN 
 
 if __name__ == "__main__":
     root = tk.Tk()
     app = InventoryApp(root)
+
     root.mainloop()
