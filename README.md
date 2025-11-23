@@ -27,7 +27,7 @@ Make sure Python 3 and `tkinter` are installed on your system.
 3. Basic workflow:
 - Open the app  
 - Use **Add Product** to insert new items with name, category, price, and initial stock. 
-- Use **Edit** or **Delete** to maintain product records as needed. [web:3][web:5]  
+- Use **Edit** or **Delete** to maintain product records as needed.  
 - Use **Search** to quickly find items by keyword.
 
 
