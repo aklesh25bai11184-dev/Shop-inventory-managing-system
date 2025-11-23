@@ -35,11 +35,11 @@ class InventoryApp:
         self.var_qty = tk.StringVar()
         self.var_price = tk.StringVar()
 
-        # TOP FRAME 
+        # Top Frame
         top_frame = tk.LabelFrame(self.root, text="Item Details", padx=10, pady=10)
         top_frame.pack(fill="x", padx=10, pady=5)
 
-        # ID (read only)
+        # ID 
         tk.Label(top_frame, text="ID").grid(row=0, column=0, padx=5, pady=5, sticky="w")
         self.entry_id = tk.Entry(top_frame, textvariable=self.var_id, state="readonly", width=10)
         self.entry_id.grid(row=0, column=1, padx=5, pady=5, sticky="w")
@@ -59,7 +59,7 @@ class InventoryApp:
         self.entry_price = tk.Entry(top_frame,bg="light yellow", textvariable=self.var_price, width=10)
         self.entry_price.grid(row=1, column=3, padx=5, pady=5, sticky="w")
 
-        #  BUTTONS 
+        #  Buttons 
         btn_frame = tk.Frame(self.root)
         btn_frame.pack(fill="x", padx=10, pady=5)
 
@@ -69,7 +69,7 @@ class InventoryApp:
         tk.Button(btn_frame, text="Clear", width=10, command=self.clear_fields).grid(row=0, column=3, padx=5)
         tk.Button(btn_frame, text="Refresh", width=10, command=self.fetch_items).grid(row=0, column=4, padx=5)
 
-        #  TABLE (TREEVIEW) 
+        #  Table 
         table_frame = tk.Frame(self.root)
         table_frame.pack(fill="both", expand=True, padx=10, pady=5)
 
@@ -97,10 +97,10 @@ class InventoryApp:
         self.item_table.pack(fill="both", expand=True)
         self.item_table.bind("<ButtonRelease-1>", self.get_selected_row)
 
-        # Load data at start
+        
         self.fetch_items()
 
-    #  HELPER FUNCTIONS 
+    
 
     def clear_fields(self):
         self.var_id.set("")
@@ -207,11 +207,12 @@ class InventoryApp:
             messagebox.showerror("Error", f"Error while deleting item: {e}")
 
 
-#  MAIN 
+
 
 if __name__ == "__main__":
     root = tk.Tk()
     app = InventoryApp(root)
 
     root.mainloop()
+
 
