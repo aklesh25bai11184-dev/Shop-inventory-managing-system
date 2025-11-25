@@ -22,7 +22,7 @@ The project focuses on building a standalone desktop application for managing a 
   - Automatically update stock when items are sold or restocked.  
   - Search and filter products by name, category, or ID.
 
-Target Users
+##Target Users
 Small and medium-sized shop owners and retail managers.
 Storekeepers and warehouse staff responsible for inventory operations.
 Business executives seeking accurate inventory data for decision-making.
