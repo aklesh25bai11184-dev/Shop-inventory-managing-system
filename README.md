@@ -36,7 +36,7 @@ The app stores data in SQLite database.
 2. Run the application
 3. Basic workflow:
 - Open the app  
-- Use **Add Product** to insert new items with name, price, and initial stock. (eg= Mango juice, price=20, Stock=50)
+- Use **Add Product** to insert new items with name, price, and initial stock. (eg= Mango juice, price=20, Stock=45)
 - Use **Edit** or **Delete** to maintain product records as needed.(Like you can change the price, stock, name or serial number)
 - Use **Search** to quickly find items by keyword. (you can use this to find items saved)
 
