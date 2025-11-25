@@ -1,7 +1,7 @@
 # Shop Inventory Management System(SIMS)
 
 ## Problem Statement
-Small retail shops often manage their inventory using handwritten registers which makes it hard to know the exact stock level of each product at any given time. This manual process is time‑consuming, error‑prone, and does not work well as the number of products and daily transactions increases. The lack of a centralized, user‑friendly system leads to issues like stockouts, overstocking. The Shop Inventory Management System aims to replace these manual methods with a simple desktop application that automates inventory tracking.
+Traditional inventory management methods in small and medium-sized retail shops rely heavily on manual record-keeping, which is inefficient, error-prone, and time-consuming. Storekeepers often struggle to keep stock data updated, produce timely and accurate reports, and prevent stockouts or overstocking due to the lack of real-time inventory tracking. Manual processes make it difficult to manage stock across multiple locations, maintain data integrity, and secure inventory information from unauthorized access. These challenges result in lost sales, excess inventory costs, inaccurate forecasting, delayed decision-making, and an overall reduction in operational efficiency.​
 
 ## Scope of the Project
 The project focuses on building a standalone desktop application for managing a single shop’s inventory. It will allow the user to maintain a product catalog, record stock levels, and update quantities after purchases and sales. The system will provide a graphical user interface (GUI) for daily operations such as adding a new product, editing an existing product, and viewing current stock. Data will be stored locally (SQLite), and the initial scope will not cover multi‑branch operations, advanced analytics, or online access. However, the design will be kept modular so that features like reporting, alerts, or user roles can be added later if required.
@@ -21,6 +21,11 @@ The project focuses on building a standalone desktop application for managing a 
   - View a list of all products with current stock levels.  
   - Automatically update stock when items are sold or restocked.  
   - Search and filter products by name, category, or ID.
+
+Target Users
+Small and medium-sized shop owners and retail managers.
+Storekeepers and warehouse staff responsible for inventory operations.
+Business executives seeking accurate inventory data for decision-making.
 
 - Data Storage and Basic Validation  
   - Store product and transaction data in a local storage mechanism (SQLite).  
