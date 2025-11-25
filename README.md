@@ -17,6 +17,8 @@ A shop inventory management system is software designed to track and control the
 - `ttk` for styled widgets  
 - `sqlite3` for database access
 
+<img width="413" height="93" alt="Screenshot 2025-11-23 211007" src="https://github.com/user-attachments/assets/fc627932-5d39-4ab5-bb46-458417cb1b86" />
+
 
 <img width="1048" height="790" alt="Screenshot 2025-11-23 152458" src="https://github.com/user-attachments/assets/4d444783-59ff-4cb2-ae95-1a667ccefe35" />
 
