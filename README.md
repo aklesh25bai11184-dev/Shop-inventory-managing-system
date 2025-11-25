@@ -25,11 +25,12 @@ A shop inventory management system is software designed to track and control the
   
 ## Installation and Running
 **Clone the repository**
-Make sure Python 3.6+
-Verify tkinter: python -m tkinter
-Download sims.py
-Run: python sims.py
-The app stores data in SQLite database.
+
+1.Make sure Python 3.6+
+2.Verify tkinter: python -m tkinter
+3.Download sims.py
+4.Run: python sims.py
+5.The app stores data in SQLite database.
 
 ## Usage
 1. Initialize the database 
